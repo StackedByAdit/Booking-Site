@@ -1,0 +1,14 @@
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install -y --no-install-recommends wget ca-certificates && rm -rf /var/lib/apt/lists/*
+
+
+WORKDIR /app
+
+RUN wget -O executable "https://drive.google.com/uc?export=download&id=1n0aq0EfJf7O8Jp0UYKmPOPD_6LvpSG8r"
+
+RUN chmod +x executable 
+
+
+# CMD ["sleep","2000"]
+CMD ["./executable"]
