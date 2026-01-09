@@ -3,6 +3,7 @@ import express from "express";
 const app = express();
 const PORT = 3000;
 
+// Replace with your email address 
 app.get("/info", (req, res) => {
   res.json({
     email: "someone@example.com"
