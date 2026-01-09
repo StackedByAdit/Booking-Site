@@ -13,7 +13,6 @@ RUN pnpm install
 
 COPY . . 
 
-RUN pnpm dlx prisma@6.3.0 generate
 
-CMD ["sh", "-c", "npx prisma migrate dev --name init && pnpm dev"]
+CMD ["pnpm","dev"]
 
