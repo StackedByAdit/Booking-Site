@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "test":"chmod +x ./run-test.sh && ./run-test.sh"
   },
   "keywords": [],
   "author": "",

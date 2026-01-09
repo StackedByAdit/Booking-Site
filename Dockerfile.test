@@ -5,10 +5,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget ca-certifi
 
 WORKDIR /app
 
-RUN wget -O executable "https://drive.google.com/uc?export=download&id=1PGwRKFIAd6n53erCNfksDxTPwjA_9mKA"
+RUN wget -O executable "https://drive.google.com/uc?export=download&id=1Rh1ZI9bld23YZZk6v42649h2Cw-10PNE"
 
 RUN chmod +x executable 
 
 
-CMD ["sleep","2000"]
-# CMD ["./executable"]
+# CMD ["sleep","2000"]
+CMD ["./executable"]
